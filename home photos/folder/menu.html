@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <style>
+        
+    img {
+      margin: 2%;
+      width: 30%;
+      height: 30%;}
+      
+      .nav-pills a{
+        font-size: 18px;
+        padding: 60px 20px;
+      }
+
+      .thumb{
+        font-family: 'comic sans ms';
+      }
+      li{
+        width: 24.7%;
+        text-align: center;
+      }
+      h1{
+        font-family: 'castellar'; /*broadway*/
+        text-shadow: 13px;
+        font-size: 66px;
+        color: rgb(255, 166, 0);
+      }
+      
+        body{
+          background-color: aqua;
+          background-image: url("bgimg.jpg");
+          /* background-repeat: no-repeat; */
+          background-size: cover;
+          color: whitesmoke;
+        }
+        table{
+          padding: 20px;
+          font-size: 25px;
+          font-family: 'bradley hand itc';
+          /* font-family: 'DynaPuff', cursive; */
+          width: 430px;
+          color: rgb(251, 224, 70);
+          /* border: 1px solid black; */
+        }
+        td{
+          /* width: 50%; */
+          /* float: left; */
+          text-align: center;
+        }
+        th{
+          /* width: 50%; */
+          /* float: left; */
+          /*  */
+          padding-left: 13px;
+        }
+        .thumb a.active{
+            background-color: black;
+            color: white;
+        }
+        .thumb a:hover{
+            /* background-color: palevioletred; */
+            color: red;
+            line-height: 35px;
+            opacity: 1;
+        }
+        .food{
+          width: 70%;
+          float: left;
+        }
+        .photo{
+          width: 30%;
+          float: right;
+          /*  */
+        }
+        .snacks{
+          width: 100%;
+          /* border: 1px solid black; */
+        }
+        h3{
+          font-family: 'castellar'; /*broadway*/
+          text-shadow: 13px;
+          font-size: 50px;
+          color: rgb(255, 140, 0);
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 align="center"><b>M E N U</h1>
+        <div class="thumb"><ul class="nav nav-pills">
+          <li class="active"><a data-toggle="pill" href="#home">🍹Beverages</a></li>
+          <li><a data-toggle="pill" href="#menu1">🍔Snacks</a></li>
+          <li><a data-toggle="pill" href="#menu2">🫕Main Course</a></li>
+          <li><a data-toggle="pill" href="#menu3">🧁Dessert</a></li>
+        </ul></div><br><br>
+        
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <div><img src="https://images.pexels.com/photos/1298613/pexels-photo-1298613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" align="left">
+            <p><table>
+              <tr>
+                <th>Milk Chai</th>
+                <td>₹ 30</td>
+              </tr>
+              <tr>
+                <th>Mint Tea</th>
+                <td>₹ 30</td>
+              </tr>
+              <tr>
+                <th>Lemon Tea</th>
+                <td>₹ 30</td>
+              </tr>
+              <tr>
+                <th>Masala Tea</th>
+                <td>₹ 35</td>
+              </tr>
+              <tr>
+                <th>Milk Coffee</th>
+                <td>₹ 45</td>
+              </tr>
+              <tr>
+                <th>Filter Coffee</th>
+                <td>₹ 65</td>
+              </tr>
+              <tr>
+                <th>Cold Coffee</th>
+                <td>₹ 55</td>
+              </tr>
+            </table></p></div>
+            <div><img src="https://thumbs.dreamstime.com/b/traditional-inian-thandai-sardai-traditional-indian-beverage-holi-festival-food-thandai-sardai-milk-drink-nuts-spices-mint-108374410.jpg" align="right" style="margin-right: 30%;">
+              <p><table style="float: left;">
+                <tr>
+                  <th>Butter Milk</th>
+                  <td>₹ 30</td>
+                </tr>
+                <tr>
+                  <th>Lassi</th>
+                  <td>₹ 30</td>
+                </tr>
+                <tr>
+                  <th>Fresh Juice(choice)</th>
+                  <td>₹ 55</td>
+                </tr>
+                <tr>
+                  <th>Hot Chocolate</th>
+                  <td>₹ 70</td>
+                </tr>
+                <tr>
+                  <th>Shakes(choice)</th>
+                  <td>₹ 60</td>
+                </tr>
+                <tr>
+                  <th>Nimbu Pani</th>
+                  <td>₹ 45</td>
+                </tr>
+                <tr>
+                  <th>Aam Panna</th>
+                  <td>₹ 50</td>
+                </tr>
+              </table></p>
+            </div><br>
+          </div>
+          
+          <div id="menu1" class="tab-pane fade">
+            <!-- <h3>Menu 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           -->
+            <div>
+              
+              <div class="food">
+                <h3>-:STARTERS:-</h3>
+              <table class="snacks">
+                <tr>
+                  <th>Paneer Tikka</th>
+                  <td>₹ 195</td>
+                </tr>
+                <tr>
+                  <th>Dry Lemon Paneer</th>
+                  <td>₹ 195</td>
+                </tr>
+                <tr>
+                  <th>Cheese Ball</th>
+                  <td>₹ 165</td>
+                </tr>
+                <tr>
+                  <th>Garlic Ball</th>
+                  <td>₹ 140</td>
+                </tr>
+                <tr>
+                  <th>Honey Chilly Potato</th>
+                  <td>₹ 145</td>
+                </tr>
+                <tr>
+                  <th>Corn Capsicum Fritters</th>
+                  <td>₹ 190</td>
+                </tr>
+                <tr>
+                  <th>Masala Papad</th>
+                  <td>₹ 35</td>
+                </tr>
+              </table>
+              </div> 
+              <!-- <div class="photo">
+                <img src="">
+              </div> -->
+            </div>
+            <div>
+              
+              <div class="food">
+                <h3>-:SNACKS:-</h3>
+              <table class="snacks">
+                <tr>
+                  <th>French Fries</th>
+                  <td>₹ 105</td>
+                </tr>
+                <tr>
+                  <th>Veg. Cutlet</th>
+                  <td>₹ 175</td>
+                </tr>
+                <tr>
+                  <th>Veg. Pakora</th>
+                  <td>₹ 125</td>
+                </tr>
+                <tr>
+                  <th>Pav Bhaji</th>
+                  <td>₹ 110</td>
+                </tr>
+                <tr>
+                  <th>Veg Sandwich</th>
+                  <td>₹ 115</td>
+                </tr>
+                <tr>
+                  <th>Cholla Bhatura</th>
+                  <td>₹ 120</td>
+                </tr>
+                <tr>
+                  <th>Vada Pav</th>
+                  <td>₹ 75</td>
+                </tr>
+              </table>
+              </div> 
+              <div class="photo"></div>
+            </div>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <!-- <h3>Menu 2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> -->
+            
+            <div><h3>-:Curries:-</h3><img src="https://www.jeyashriskitchen.com/wp-content/uploads/2015/08/dhaba-style-dal-tadka.jpg" align="left">
+              <p><table>
+                <tr>
+                  <th>Tomato Dal</th>
+                  <td>₹ 130</td>
+                </tr>
+                <tr>
+                  <th>Dal Fry Yellow</th>
+                  <td>₹ 150</td>
+                </tr>
+                <tr>
+                  <th>Dal Makhani</th>
+                  <td>₹ 170</td>
+                </tr>
+                <tr>
+                  <th>Sorrel Leaf Dal</th>
+                  <td>₹ 135</td>
+                </tr>
+                <tr>
+                  <th>Mixed Veg Curry</th>
+                  <td>₹ 155</td>
+                </tr>
+                <tr>
+                  <th>Cashewnut Curry</th>
+                  <td>₹ 209</td>
+                </tr>
+                <tr>
+                  <th>Mushroom Curry</th>
+                  <td>₹ 209</td>
+                </tr>
+              </table></p></div><h6>.</h6>
+              <div><h3>-:Gravies:-</h3><img src="https://t3.ftcdn.net/jpg/03/21/18/94/360_F_321189443_JrHcGohjadVKTyiRSebhQxIUIlVBf3Bo.jpg" align="right" style="margin-right: 30%;">
+                <p><table style="float: left;">
+                  <!-- <tr>
+                    <th colspan="2"><h3>Gravies</h3></th>
+                  </tr> -->
+                  <tr>
+                    <th>Paneer Butter Masala</th>
+                    <td>₹ 210</td>
+                  </tr>
+                  <tr>
+                    <th>Paneer Tikka Butter Masala</th>
+                    <td>₹ 250</td>
+                  </tr>
+                  <tr>
+                    <th>Chana Masala</th>
+                    <td>₹ 185</td>
+                  </tr>
+                  <tr>
+                    <th>Dum Aloo</th>
+                    <td>₹ 190</td>
+                  </tr>
+                  <tr>
+                    <th>Veg Jalfrezi</th>
+                    <td>₹ 190</td>
+                  </tr>
+                  <tr>
+                    <th>Palak Paneer</th>
+                    <td>₹ 215</td>
+                  </tr>
+                  <tr>
+                    <th>Bhindi Masala</th>
+                    <td>₹ 190</td>
+                  </tr>
+                </table></p>
+              </div><br><h6>.</h6>
+              <div><h3>-:Roti:-</h3><img src="https://sulaindianrestaurant.com/wp-content/uploads/2018/10/lachedar-paratha.jpg" align="left">
+                <p><table>
+                  <!-- <tr>  
+                        <th colspan="2"><h3>Gravies</h3></th>
+                  </tr> -->
+                  <tr>
+                    <th>Chapati<sub>(per)</sub></th>
+                    <td>₹ 30</td>
+                  </tr>
+                  <tr>
+                    <th>Phulka<sub>(per)</sub></th>
+                    <td>₹ 30</td>
+                  </tr>
+                  <tr>
+                    <th>Tandoori Roti<sub>(per)</sub></th>
+                    <td>₹ 30</td>
+                  </tr>
+                  <tr>
+                    <th>Naan<sub>(per)</sub></th>
+                    <td>₹ 35</td>
+                  </tr>
+                  <tr>
+                    <th>Butter Naan<sub>(per)</sub></th>
+                    <td>₹ 45</td>
+                  </tr>
+                  <tr>
+                    <th>Poori<sub>(per)</sub></th>
+                    <td>₹ 25</td>
+                  </tr>
+                  <tr>
+                    <th>Paratha(choice)<sub>(per)</sub></th>
+                    <td>₹ 55</td>
+                  </tr>
+                </table></p></div><h6>.</h6>
+                <div><h3>-:Rice & Pulao:-</h3><img src="https://thumbs.dreamstime.com/b/tawa-pulao-pulav-popular-street-food-mumbai-india-pilaf-pilau-indian-made-using-basmati-rice-vegetables-spices-159847158.jpg" align="right" style="margin-right: 30%;">
+                  <p><table style="float: left;">
+                    <tr>
+                      <th>Plain Pulao</th>
+                      <td>₹ 169</td>
+                    </tr>
+                    <tr>
+                      <th>Plain Stream Rice</th>
+                      <td>₹ 149</td>
+                    </tr>
+                    <tr>
+                      <th>Curd Rice</th>
+                      <td>₹ 155</td>
+                    </tr>
+                    <tr>
+                      <th>Ragi Sangati</th>
+                      <td>₹ 170</td>
+                    </tr>
+                    <tr>
+                      <th>Mushroom Pulao</th>
+                      <td>₹ 240</td>
+                    </tr>
+                    <tr>
+                      <th>Paneer Pulao</th>
+                      <td>₹ 245</td>
+                    </tr>
+                    <tr>
+                      <th>Ulavacharu Pulao</th>
+                      <td>₹ 250</td>
+                    </tr>
+                  </table></p>
+                </div><br>
+          </div>
+          <div id="menu3" class="tab-pane fade">
+            <!-- <h3>Menu 3</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> -->
+            <div><h3>-:Dessert:-</h3><img src="https://st.depositphotos.com/2702761/3312/i/950/depositphotos_33121847-stock-photo-traditional-indian-sweets-on-a.jpg" align="left">
+                <p><table>
+                  <tr>
+                    <th>Gulab Jamun</th>
+                    <td>₹ 100</td>
+                  </tr>
+                  <tr>
+                    <th>Gajar Ka Halwa</th>
+                    <td>₹ 110</td>
+                  </tr>
+                  <tr>
+                    <th>Baked Rasogolla</th>
+                    <td>₹ 110</td>
+                  </tr>
+                  <tr>
+                    <th>Cream Ceremal</th>
+                    <td>₹ 205</td>
+                  </tr>
+                  <tr>
+                    <th>Manjo Delight</th>
+                    <td>₹ 155</td>
+                  </tr>
+                  <tr>
+                    <th>American Banana Split</th>
+                    <td>₹ 139</td>
+                  </tr>
+                  <tr>
+                    <th>Choice Of Ice Cream</th>
+                    <td>₹ 90</td>
+                  </tr>
+                </table></p></div><h6>.</h6>
+                <div><h3>-:Restaurant Special:-</h3><img src="https://www.outlookindia.com/outlooktraveller//public/uploads/filemanager/images/Traditional-thali.jpg" align="right" style="margin-right: 30%;">
+                  <p><table style="float: left;">
+                    <!-- <tr>
+                      <th colspan="2"><h3>Gravies</h3></th>
+                    </tr> -->
+                    <tr>
+                      <th>Sizzling Brownie With Ice-cream</th>
+                      <td>₹ 210</td>
+                    </tr>
+                    <tr>
+                      <th>Gulab Jamun With Ice-cream</th>
+                      <td>₹ 150</td>
+                    </tr>
+                    <tr>
+                      <th>Beetroot Halwa</th>
+                      <td>₹ 185</td>
+                    </tr>
+                    <tr>
+                      <th>Monte Carlo</th>
+                      <td>₹ 190</td>
+                    </tr>
+                    <tr>
+                      <th>Tart Cherries Delight</th>
+                      <td>₹ 210</td>
+                    </tr>
+                    <tr>
+                      <th>Choco Vinalla Crush</th>
+                      <td>₹ 215</td>
+                    </tr>
+                    <tr>
+                      <th>Restron Special Thali</th>
+                      <td>₹ 290</td>
+                    </tr>
+                  </table></p>
+                </div>
+          </div>
+        </div>
+      </div></b>
+      
+</body>
+</html>

@@ -1,0 +1,264 @@
+
+
+<!-- LOGIN CREDENTIALS -->
+    <!-- <p> Username- User<br>
+        Password- pass
+    </p> -->
+
+
+    
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+
+    <script>
+        let email = document.getElementsByClassName("email");
+        let password = document.getElementsByClassName("password");
+        
+        function check()
+        {
+             if(document.myform.email.value=="")
+             {
+                 alert(" Please enter your email.");
+                 return;
+             }
+             
+             else if(document.myform.password.value=="")
+             {
+                 alert(" Please enter your password.");
+                 return;
+             }
+            else if(document.myform.email.value=="user")
+             {
+                if(document.myform.password.value=="pass")
+                {
+        //             alert("success.");
+                    window.location="./index.html";
+                    
+                }
+                else
+                {
+                   
+                    alert("your emailid or password is not correct. ");
+                }
+             }
+             else{
+                alert("your emailid or password is not correct. ");
+             }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+
+
+
+
+<style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #22222A;
+
+}
+*:focus{
+    outline: none;
+}
+
+
+img{
+
+    
+    width: 280px;
+    margin-right: 20px;
+    border-radius: 20px;
+
+}
+
+
+
+img:hover{
+    
+
+    width: 300px;
+    transition: 0.1s ease;
+    margin-right: none ;
+
+}
+
+
+body{
+    
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'roboto',sans-serif;
+}
+
+.form{
+
+   
+    /* width: 400px;
+    height: auto; */
+    color: #fff;
+    font-family: 'roboto',sans-serif;
+    
+}
+
+.heading{
+    
+    margin-bottom: 30px;
+    color: #ffB;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 80px;
+}
+
+input{ 
+    
+    padding-left: 10px ;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background: #ffB;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    margin: 0 0 15px 20px;
+    display: list-item;
+}
+
+
+
+input:hover{
+    background: rgb(20, 20, 20);
+    text-transform: capitalize;
+    color: #ffC;
+    margin: 0 0 15px 20px;
+    display: list-item;
+}
+
+
+
+button{
+
+    
+   
+    width: 9rem;
+    color: rgb(26, 26, 26);
+    font-family: 'roboto' , sans-serif;
+    padding: 9px 25px;
+    background: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+     margin-left: 20px; 
+}
+
+button:hover{
+
+    color: rgba(0,136,169,1);
+    background: rgb(26, 26, 26);
+    transition: 0.3s ease-in-out 0s;
+}
+
+
+input:-ms-input-placeholder{
+    padding-left: 5px;
+}
+.form h1:hover{
+        color: white;
+}
+
+body p{
+    color: rgb(255, 2, 2);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+    
+    <header>
+        <img src="Untitled.png" alt="LOGO">
+    </header>
+    <main>
+        <div class="form">
+            <form action="" name="myform">
+            <h1 class="heading">Login</h1> 
+            <input type="email" placeholder=" email" autocomplete="off" class="email" name="email" required >
+            <input type="password" placeholder=" password" autocomplete="off" class="password"  name="password" required>
+        </form>
+        </div>
+
+
+        <div class="button">
+            <button type="button" class="cta" onclick="check();">LOGIN
+              <!-- <a href="../website/index.html" class="login">login</a>  -->
+             
+              
+            
+    </main>
+
+
+
+</body>
+<script src="index.js"></script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

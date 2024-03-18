@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Kalam&display=swap');
+body {
+    font-family: "Open Sans", sans-serif;
+    background: url("abbg.jpg") center center;
+    background-size: cover;
+    /* background-size: contain; */
+/* background-repeat: no-repeat; */
+    position: relative;
+    /* filter: brightness(0%); */
+    margin: 0px;
+    padding: 0px 0;
+    
+}
+a {
+    color: #cda45e;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #d9ba85;
+    text-decoration: none;
+  }
+    .section-title {
+        padding-bottom: 40px;
+      }
+      
+      .section-title h2 {
+        margin: 50px;
+        font-family: 'Kalam', cursive;
+        font-size: 30px;
+        font-weight: 2000;
+        color: #fff;
+        padding: 10;
+        line-height: 1px;
+        /* margin: 0 0 25px 0; */
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        
+        
+      }
+      .section-title h2:hover{
+        font-style: italic;
+        color: #eb1717;
+      }
+      
+      .section-title h2::after {
+        content: "";
+        width: 120px;
+        height: 1px;
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 4px 10px;
+      }
+      
+      .section-title p {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 700;
+        font-family: 'Kalam', cursive;
+        
+        color: #cda45e;
+      }
+      .section-title p:hover{
+        color: brown;
+        font-style: italic;
+      }
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+.gallery .gallery-item {
+    overflow: hidden;
+    border-right: 3px solid #c8520e;
+    border-bottom: 3px solid #454035;
+  }
+  
+  .gallery .gallery-item img {
+    
+    transition: all ease-in-out 0.4s;
+    width: 400px;
+    height: 233px;
+  }
+  
+  .gallery .gallery-item:hover img {
+    transform: scale(1.1);
+    
+  }
+  

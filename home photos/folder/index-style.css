@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background: url("bg.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    /* background: white; */
+    font-family: 'DynaPuff', cursive;
+    /* border: 2px solid red; */
+    height: 150px;
+}
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+}
+.logo img:hover{
+   width: 92px;
+   cursor:pointer;
+}
+.logo h4{
+    color: beige;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 20px;
+    color: rgb(181, 127, 232);
+    font-size: 25px;
+    cursor:pointer;
+       /* margin: 0; */
+}
+nav ul li:hover{
+    color: rgb(75, 9, 136);
+    }
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color:orangered;
+    font-weight: bold;
+}
+.left {
+    height: 80vh;
+    width: 35vw;
+    /* background-color: aqua; */
+}
+.left h3{
+    margin: 40px;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: left;
+}
+.left p{
+    margin: 40px;
+    font-size: 20px;
+}
+
+.right {
+    height: 70vh;
+    width: 45vw;
+    /* background-color: blueviolet; */
+}
+.right img{
+    width: 400px;
+    /* height: 380px; */
+    animation: imgRotate 50s linear infinite;
+}
+
+
+@keyframes imgRotate { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    color: blanchedalmond;
+
+}
